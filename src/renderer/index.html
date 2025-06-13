@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi" xml:lang="vi"></html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Video Processing App</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+  <div class="min-h-screen bg-gray-50">
+    <!-- Sidebar -->
+    <aside class="fixed top-0 left-0 h-full w-64 bg-white border-r shadow-sm z-10">
+      <div class="p-6 text-xl font-bold flex items-center gap-2">
+        <span class="icon"></span> Video Studio
+      </div>
+      <nav class="flex flex-col gap-2 px-4">
+        <button class="button-ghost justify-start gap-2">
+          <span class="icon"></span> Dự án của tôi
+        </button>
+        <button class="button-ghost justify-start gap-2">
+          <span class="icon"></span> Xử lý video
+        </button>
+        <button class="button-ghost justify-start gap-2">
+          <span class="icon"></span> Cài đặt
+        </button>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-64 p-8">
+      <h1 class="text-3xl font-bold mb-6">🎬 Trang chính Video Studio</h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-custom cursor-pointer hover:shadow-lg transition-shadow">
+          <div class="card-content p-6 flex flex-col gap-2">
+            <span class="icon text-blue-600"></span>
+            <h2 class="text-lg font-semibold">Dự án của tôi</h2>
+            <p class="text-sm text-muted-foreground">Xem và chỉnh sửa các video bạn đã lưu.</p>
+          </div>
+        </div>
+
+        <div class="card-custom cursor-pointer hover:shadow-lg transition-shadow">
+          <div class="card-content p-6 flex flex-col gap-2">
+            <span class="icon text-green-600"></span>
+            <h2 class="text-lg font-semibold">Xử lý video</h2>
+            <p class="text-sm text-muted-foreground">Chọn video, thêm caption, hiệu ứng và xuất bản.</p>
+          </div>
+        </div>
+
+        <div class="card-custom cursor-pointer hover:shadow-lg transition-shadow">
+          <div class="card-content p-6 flex flex-col gap-2">
+            <span class="icon text-gray-600"></span>
+            <h2 class="text-lg font-semibold">Cài đặt</h2>
+            <p class="text-sm text-muted-foreground">Tuỳ chỉnh cấu hình hệ thống và nền tảng xuất bản.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
