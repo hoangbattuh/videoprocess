@@ -14,4 +14,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-lint = "flake8 video-engine/"
+lint = "flake8 backend/video_engine/"
