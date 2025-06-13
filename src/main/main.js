@@ -7,8 +7,8 @@ function createWindow() {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      nodeIntegration: true,
-      contextIsolation: false,
+      nodeIntegration: false, // Tắt nodeIntegration để tăng bảo mật
+      contextIsolation: true, // Bật contextIsolation để tăng bảo mật
     },
   });
 
